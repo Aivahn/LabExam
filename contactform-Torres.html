@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Contact Form — Torres</title>
+  <link rel="stylesheet" href="contactform-Torres.css" />
+</head>
+<body>
+  <div class="container">
+    <form id="contactForm" class="card" novalidate>
+      <h1>Contact Us</h1>
+
+      <label for="name">Name</label>
+      <input id="name" name="name" type="text" />
+
+      <label for="email">Email</label>
+      <input id="email" name="email" type="email" />
+
+      <label for="subject">Subject</label>
+      <input id="subject" name="subject" type="text" />
+
+      <label for="message">Message</label>
+      <textarea id="message" name="message" rows="5"></textarea>
+
+      <div class="actions">
+        <button id="sendBtn" type="submit">Send Message</button>
+        <button id="themeBtn" type="button">Change Theme</button>
+      </div>
+
+      <p id="status" class="status" role="status" aria-live="polite"></p>
+    </form>
+  </div>
+
+  <script src="contactform-Torres.js"></script>
+</body>
+</html>
