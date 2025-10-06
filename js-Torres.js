@@ -9,12 +9,15 @@ document.addEventListener('DOMContentLoaded', () => {
   const submitBtn = document.getElementById('submitBtn');
 
   // color change behavior + alert
-  const colors = ['#f5f7fb','#fff7ed','#f0fff4','#fef2f2','#eef2ff'];
+  const bgColors = ['#f5f7fb','#fff7ed','#f0fff4','#fef2f2','#eef2ff','#f0f9ff'];
+  const textColors = ['#1e3a8a','#92400e','#166534','#991b1b','#4338ca','#0c4a6e'];
   let idx = 0;
+
   colorBtn.addEventListener('click', () => {
-    idx = (idx + 1) % colors.length;
-    document.body.style.background = colors[idx];
-    alert('Background color changed!');
+    idx = (idx + 1) % bgColors.length;
+    document.body.style.background = bgColors[idx];
+    document.body.style.color = textColors[idx];
+    alert('Color theme changed!');
   });
 
   // helpers
@@ -63,6 +66,7 @@ document.addEventListener('DOMContentLoaded', () => {
     submitBtn.textContent = 'Thank you!';
     submitBtn.disabled = true;
     document.body.style.background = '#e6fffb'; // small celebration
+    document.body.style.color = '#064e3b';
     message.textContent = `Thank you ${fullname.value}. A confirmation was sent to ${email.value}.`;
     message.style.color = '#059669';
   });
