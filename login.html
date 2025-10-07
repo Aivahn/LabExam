@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Login — Torres</title>
+  <link rel="stylesheet" href="login-Malang.css" />
+</head>
+<body>
+  <div class="container">
+    <form id="loginForm" class="card" novalidate>
+      <h1>Login</h1>
+
+      <label for="email">Email</label>
+      <input id="email" name="email" type="email" required autocomplete="username" />
+
+      <label for="password">Password</label>
+      <div class="pw-wrap">
+        <input id="password" name="password" type="password" minlength="6" required autocomplete="current-password" />
+        <button id="togglePw" type="button" aria-label="Toggle password visibility">Show</button>
+      </div>
+
+      <div class="actions">
+        <button id="loginBtn" type="submit">Login</button>
+        <button id="themeBtn" type="button">Change Color</button>
+      </div>
+
+      <p id="message" class="message" role="status" aria-live="polite"></p>
+    </form>
+  </div>
+
+  <script src="login-Malang.js"></script>
+</body>
+</html>
